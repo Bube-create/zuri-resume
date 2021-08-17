@@ -17,26 +17,27 @@ body {
 	position: absolute;
 	top: 10px;
 	left: 30px;
-	height: 150px;
-	width: 150px;
+	height: 100px;
+	width: 100px;
 	z-index: -10;
 }
 
+#logo img {
+	height: 100%;
+	width: 100%;
+}
 main {
 	max-width: 900px;
 	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
-	/* border: 2px solid red; */
 	height: 100%;
 	padding: 3rem;
-	/* justify-content: space-evenly; */
 }
 
 main .name {
 	text-align: center;
 	margin-top: 70px;
-	/* border: 2px solid red; */
 }
 
 .name h1 {
@@ -53,7 +54,6 @@ main .name {
 .middle {
 	padding: 30px;
 	padding-left: 30px;
-	/* border: 2px solid green; */
 	max-width: 500px;
 	margin: 20px auto;
 }
@@ -71,35 +71,32 @@ main .name {
 	justify-content: space-evenly;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
 	#logo {
 		position: absolute;
 		top: 10px;
 		left: 20px;
-		height: 100px;
-		width: 100px;
-		background-color: transparent;
+		height: 70px;
+		width: 70px;
 		z-index: -10;
 	}
-
 	main {
 		margin-top: 10px;
+		padding: 10px;
 		justify-content: space-evenly;
 	}
 	.name h1 {
+		font-size: 2rem;
+		letter-spacing: 3px;
+		margin-bottom: 10px;
 		margin-top: 15px;
 	}
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
 	#logo {
-		position: absolute;
-		top: 3px;
-		left: 10px;
-		height: 100px;
-		width: 100px;
-		background-color: transparent;
-		z-index: -10;
+		display: flex;
+		text-align: center;
 	}
 
 	main {
